@@ -1,0 +1,48 @@
+/*body part is used for image in that body*/
+body{
+    background-repeat: no-repeat;/*Makes it so it dosen't repeat*/
+    background-attachment:fixed;/*Makes it so that it can't be scrolled */
+    background-size: 100%;
+    background-position: center; /*Makes it so that it covers the whole width of page's visible portion*/
+  }
+  /* This part is being used for better margin gap and font size of all elements of the page.*/
+  * {
+    margin-bottom: 10px; 
+    font-size: 30px;
+  }
+  /*This part is here to add margin spaces at each section change for page to look bigger than what it actually is in the normal size.*/
+  .SectionBreak{
+      margin-bottom: 25%;
+  }
+  /*Changing css colors for links:Link and Visited*/ 
+  a:visited {
+    background-color: #f44336;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+/*Changing css colors for Links:hover and active*/
+a:hover, a:active {
+    background-color: red;
+}
+/*Did some css for table to look better than it would just standing there withe transperent background hopefully it looks better now*/
+table{
+    background-color: rgba(0, 0, 0, 0.747);
+    border: 1px solid black;
+    opacity: 7pc;
+    border-collapse: collapse;
+}
+.container {
+  min-height: 1500px;
+  padding-top: 200px;
+  text-align: center;
+  background-image: url(html_background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
