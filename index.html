@@ -2,15 +2,7 @@
 <html>
     <head>
         <title> Protfolio Shreyash</title>
-        <!---css aside {
-            width: 30%;
-            padding-left: 15px;
-            margin-left: 15px;
-            float: right;
-            font-style: italic;
-            background-color: lightgray;
-          }--->
-          <link rel="stylesheet" href="PortfolioCopy.css">
+          <link rel="stylesheet" href="index.css">
           <style>
             body{
                 background-color: #021728;
@@ -62,35 +54,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
-    <!-- <script>
-        function allowDrop(ev) {
-            ev.preventDefault();
-        }
-
-        function drag(ev) {
-            ev.dataTransfer.setData("text", ev.target.id);
-        }
-
-        function drop(ev) {
-            ev.preventDefault();
-            var data = ev.dataTransfer.getData("text");
-            ev.target.appendChild(document.getElementById(data));
-        }
-        /*script for Drag&Drop thingie so that I can use it as a validation weather someon is human or not*/
-        function allowDrop(ev) {
-          ev.preventDefault();
-        }
-        
-        function drag(ev) {
-          ev.dataTransfer.setData("text", ev.target.id);
-        }
-        
-        function drop(ev) {
-          ev.preventDefault();
-          var data = ev.dataTransfer.getData("text");
-          ev.target.appendChild(document.getElementById(data));
-        }
-        </script> -->
     </head>
     <body style="color:rgba(0, 68, 124, 0.979)">
         <section id="ima" class="container">
@@ -142,8 +105,6 @@
             </p>
         </section>
         <section id="s3" class="SectionBreak"><!--This section is about fromt where it all started and where I'm right now in the way so hope it is good-->
-            <a href="lab1.html">My first ever html code.</a><!--Internal page attached here-->
-            <button onclick="document.location='lab1.html'">First page Really</button>
             <p id="p5">
             <h1>Skills:<br></h1>
             HTML<br>
@@ -155,47 +116,6 @@
             Quick-learner<br>
         </p>
         </section>
-        <section id="s5" class="SectionBreak"><!--geo-location to get location by p-id cwaazy-->
-        <p id="p8">
-            <h2>Here's an intrasting script to get your geolocation</h2>
-            <button onclick="getLocation()">Know your location</button>
-        </p>
-        <p id="Location"></p>
-        </section>
-        <!--Geo location Script-->
-        <script>
-            var x = document.getElementById("Location");
-            function getLocation() {
-                if (navigator.geolocation) {
-                    navigator.geolocation.getCurrentPosition(showPosition, showError);
-                }
-                else { 
-                    x.innerHTML = "Geolocation is not supported by this browser.";
-                    }
-                }
-
-                function showPosition(position) {
-                    x.innerHTML = "Latitude: " + position.coords.latitude + 
-                    "<br>Longitude: " + position.coords.longitude;
-                }
-
-                function showError(error) {
-                switch(error.code) {
-                    case error.PERMISSION_DENIED:
-                    x.innerHTML = "User denied the request for Geolocation."
-                    break;
-                    case error.POSITION_UNAVAILABLE:
-                    x.innerHTML = "Location information is unavailable."
-                    break;
-                    case error.TIMEOUT:
-                    x.innerHTML = "The request to get user location timed out."
-                    break;
-                    case error.UNKNOWN_ERROR:
-                    x.innerHTML = "An unknown error occurred."
-                    break;
-                }
-            }
-            </script> 
         <section id="s4"><!--It's the last part of course for contact info and it has form that can be used for better understading the person on the clint side and 
             can send him appropriate mailings basesd on who he/she is and some info. So that he/she can be alerted about deals from our sponser(none absolutely none)
             and get mails about new articles blogs etc done by the developer I only have IG and Mail Rn but More will be there soon.-->
