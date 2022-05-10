@@ -1,10 +1,9 @@
 /*body part is used for image in that body*/
 body{
-    background-color: black;
     background-repeat: no-repeat;/*Makes it so it dosen't repeat*/
     background-attachment:fixed;/*Makes it so that it can't be scrolled */
-    background-size: 100%;
-    background-position: center; /*Makes it so that it covers the whole width of page's visible portion*/
+    background-size: cover; /*Makes it so that it covers the whole width of page's visible portion*/
+    font-family:'Marcellus SC', serif;
   }
   /* This part is being used for better margin gap and font size of all elements of the page.*/
   * {
@@ -28,22 +27,50 @@ body{
 a:hover, a:active {
     background-color: red;
 }
-/*Did some css for table to look better than it would just standing there withe transperent background hopefully it looks better now*/
-table{
-    background-color: rgba(0, 0, 0, 0.747);
-    border: 1px solid black;
-    opacity: 7pc;
-    border-collapse: collapse;
-}
 .container {
-  min-height: 1500px;
-  padding-top: 200px;
+  padding-top: 180px;
   text-align: center;
-  background-image: url(html_background.jpg);
-  background-size: cover;
-  background-position: center;
+}
+.container>img{
+  image-rendering: optimizeSpeed;
+  height: 20%;
+  width: 20%;
+ }
+#ima{
+  background-image: url(/Images/BoxSphere.png);
   background-attachment: fixed;
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 40%;
+}
+#prof{
+  padding: 16px;
+  border-radius: 100%;
+  /* border-image: linear-gradient(45deg, red 0%,black 100%); */
+  margin: 24px;
+  /* transition: transform 0.6s cubic-bezier(0.076, 0, 0.24, 1); */
+}
+/* .container>img:hover {
+  transform: scale(1.1) rotate(1deg);
+  transform-origin: center center;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.25), 0 0 48px rgba(0, 0, 0, 0.35);
+} */
+#s2>ul{
+  list-style-type: none;
+}
+.gradient{
+  max-width: 100%;
+  max-height: 00%;
+  padding: 1rem;
+  color: white;
+  border-width: 3px;
+  border-style: solid;
+  border-image: linear-gradient(0deg,red,rgba(0, 0, 0, 0)) 1 50%;
+}
+#p7>a{
+  align-items: center;
+}
+#last_line>label{
+  align-content: center;
+  
 }
