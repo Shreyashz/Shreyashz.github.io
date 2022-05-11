@@ -44,10 +44,10 @@ a:hover, a:active {
   background-size: 40%;
 }
 #prof{
-  padding: 16px;
+  padding: 0.5%;
   border-radius: 100%;
   /* border-image: linear-gradient(45deg, red 0%,black 100%); */
-  margin: 24px;
+  margin-top: 2%;
   /* transition: transform 0.6s cubic-bezier(0.076, 0, 0.24, 1); */
 }
 /* .container>img:hover {
