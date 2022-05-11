@@ -67,10 +67,10 @@ a:hover, a:active {
   border-style: solid;
   border-image: linear-gradient(0deg,red,rgba(0, 0, 0, 0)) 1 50%;
 }
-/* #p7>a{
-  align-items: center;
+#p7{
+  text-align: center; 
 }
-#last_line>label{
-  align-content: center;
-  
-} */
+#last_line{
+  text-align: center; 
+  background-image: linear-gradient(45deg, #173654, black);
+}
