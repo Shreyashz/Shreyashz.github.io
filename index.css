@@ -1,25 +1,29 @@
 /*body part is used for image in that body*/
 body{
-    background-repeat: no-repeat;/*Makes it so it dosen't repeat*/
-    background-attachment:fixed;/*Makes it so that it can't be scrolled */
+    background-attachment:scroll;/*Makes it so that it can't be scrolled */
     background-size: cover; /*Makes it so that it covers the whole width of page's visible portion*/
-    font-family:'Marcellus SC', serif;
   }
   /* This part is being used for better margin gap and font size of all elements of the page.*/
-  * {
-    margin-bottom: 10px; 
+* {
+    padding: 0px;
+    margin: 0px; 
     font-size: 30px;
   }
   /*This part is here to add margin spaces at each section change for page to look bigger than what it actually is in the normal size.*/
-  .SectionBreak{
-      margin-bottom: 25%;
+#first_back{
+    background-attachment: fixed;
   }
+#First_part>p {
+    /* Center horizontally*/
+    position: relative;
+    top: 50%;
+    /* font-size: 100px; */
+    /* margin: -25px 0 0 -25px; */
+}
   /*Changing css colors for links:Link and Visited*/ 
-  a:visited {
+a:visited {
     background-color: rgba(216, 26, 26, 0.525);
     color: white;
-    padding: 15px 25px;
-    text-align: center;
     text-decoration: none;
     display: inline-flex;
 }
@@ -27,17 +31,7 @@ body{
 a:hover, a:active {
     background-color: rgba(216, 26, 26, 0.525);
 }
-.container {
-  padding-top: 180px;
-  text-align: center;
-}
-.container>img{
-  image-rendering: optimizeSpeed;
-  height: 20%;
-  width: 20%;
- }
 #ima{
-  background-image: url(/Images/BoxSphere.png);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
@@ -67,11 +61,7 @@ a:hover, a:active {
   border-style: solid;
   border-image: linear-gradient(0deg,red,rgba(0, 0, 0, 0)) 1 50%;
 }
-#p7{
-  text-align: center; 
-  color: rgba(35, 35, 35, 0.6);
-  font-family:'Rochester', cursive;
-}
+
 #p7>a:visited{
   color: rgba(35, 35, 35, 0.6);
 }
@@ -80,6 +70,12 @@ a:hover, a:active {
 }
 #last_line{
   text-align: center; 
-  font-family:'Rochester', cursive;
   background-image: linear-gradient(45deg, #173654, black);
+}
+.dark{
+
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: 40%;
 }
