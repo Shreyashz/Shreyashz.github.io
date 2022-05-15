@@ -5,15 +5,29 @@
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	    <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title> Protfolio Shreyash</title>
+        <!-- Linking part -->
+        <link rel="shortcut icon" href="/Images/favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="index.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Megrim&family=Sen&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <!-- Over Linking part -->
         <!-- styling part -->
         <style>
             body{
-                background: linear-gradient(#030303,#252d5c, #050408);
+                top: 12px;
+                background: linear-gradient(#030303,#252d5c, #050408) no-repeat scroll;
             }
             .text_bg{
-                background-repeat: no-repeat;
-                background-attachment: scroll;
-                background-clip: text;  
+                background-image: linear-gradient(210deg,#efeff0, #9fa5f6);
+                background-size: 100%;
+                background-attachment: fixed;
+                -webkit-background-clip: text;  
                 -webkit-text-fill-color: transparent;
                 font-weight: bold;
                 -webkit-font-smoothing: antialiased;
@@ -35,135 +49,175 @@
             } */
         </style>
         <!-- over styling part -->
-        <!-- Linking part -->
-        <link rel="shortcut icon" href="/Images/favicon.ico" type="image/x-icon" />
-        <link rel="stylesheet" href="index.css">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sen&display=swap">
-        <!-- Over Linking part -->
+        <script type="text/javascript"> 
+            function display_c(){
+            var refresh=100; // Refresh rate in milli seconds
+            mytime=setTimeout('display_ct()',refresh)
+            }
+            
+            function display_ct() {
+                var RandomDate = new Date('2003/03/31 06:30:06');
+                var diff = Math.abs(new Date() - RandomDate); // This is the difference in milliseconds
+                var age = Math.abs(diff/31557600000); // Divide by 1000*60*60*24*365.25
+                document.getElementById('ct').innerHTML = age.toFixed(9);
+                display_c();
+             }
+        </script>
     </head>
-    <body style="font-family: 'Sen', sans-serif;">
-        <!-- starting point with my pic and hello THing -->
-        <div class="row justify-content-center">
-            <div id="ima" class="col-10 d-block d-sm-block p-2" style="text-align: center;">
-                <img src="/Images/profile.jpg" id="prof" class="img-responsive" style="max-height: 500px;">
+    <body class="user-select-none" data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" tabindex="0" style="font-family: 'Sen', sans-serif;" onload=display_ct();>
+        <header class="fixed-top d-none d-sm-block">
+            <nav class="navbar navbar-dark " id="navbarTry" style="background-image: linear-gradient(45deg, #1c1c1cda, #000000da);">
+                <div class="container-fluid" style="font-family:'Megrim', cursive;">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <ul class="nav nav-pills">
+                    <li class="nav-item"></li><a class="nav-link" href="#hi">Intro</a></li>
+                    <li class="nav-item"></li><a class="nav-link" href="#perInfo">Personal-info</a></li>
+                    <li class="nav-item"></li><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"></li><a class="nav-link" href="#hobbies">Hobbies</a></li>
+                    <li class="nav-item"></li><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"></li><a class="nav-link" href="#contakt">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="p-5 text_bg d-block d-sm-none display-6 mb-5 bg-body">
+                Smart phone version
+                Under Construction Please visit later
             </div>
-            <div class="col-10 d-sm-block d-block order-md-1 p-2">
-                <p id="First_part" class="text_bg display-1" style="background-image: linear-gradient(183deg, #efeff0, #b69ece);">
-                    Namasté<br>I'm Shreyash Gavit.
+            <!-- starting point with my pic and hello THing -->
+        <div class="text_bg d-none d-sm-block">
+            <div class="row justify-content-center" id="hi">
+                <div id="ima" class="col-10 d-block d-sm-block p-2" style="text-align: center;">
+                    <img src="/Images/profile.jpg" id="prof" class="img-responsive" style="max-height: 500px;">
+                </div>
+                <div class="col-10 d-sm-block d-block order-md-1 p-2">
+                    <p id="First_part" class=" display-5" >
+                        Hii, <br>I'm <span class="display-5" id='ct'></span> years old.<div class="display-6">I'm a begineer web-developer & student. </div>
+                </div>
             </div>
-        </div>
-        <!-- Over starting point -->
-        <!-- prsonal info part -->
-        <div class="row p-3 justify-content-center"><!--First Div for Name and basic data about me-->
-            <div class="col-10  p-2 text_bg" style="background-image: linear-gradient(183deg, #efeff0, #b69ece);">
-                <div class="col-8 display-4 clearfix">  <img src="/Images/profile.jpg" class="d-none d-md-block img-fluid mx-auto col-6 float-end mb-3 ms-md-3" id="prof" style="max-height: 200px; max-width: 200px;">
-                     Hello, My name is shreyash Gavit</div>
-                <div class="row p-8">    
-                    <div class="col-3 display-5">E-mail:</div><div class="col-8 display-3"> <a href="mailto:shreyashgavit@outlook.com?subject = Feedback&body = Messsage" id="mailing_adress" target="_blank">
-                    shreyashgavit@outlook.com</a></div>
-                    <!--Gave an mailing adress to be opening in new tab so that Someone can mail directly instead of anything else-->
-                    <div class="col-7 display-5">Personal info:</div>
-                    <div class="col-10">
-                        <div class="row evenly">
-                            <div class="col-6 display-6 d-sm-block">Birthday:</div><div class="col-6 display-7 d-inline"> 9 July 2003</div>
-                            <!-- <b>Age:</b> 19<br> -->
-                            <div class="col-6 display-6 d-sm-block">City:</div><div class="col-6 display-7 d-inline"> Valsad</div>
-                            <div class="col-6 display-6 d-sm-block">studying:</div><div class="col-6 display-7 d-inline"> Bechlors of Computer Engineering</div><br>
+            <!-- Over starting point -->
+            <!-- prsonal info part -->
+            <div class="row p-3 justify-content-center" id="perInfo"><!--First Div for Name and basic data about me-->
+                <div class="col-10  p-2 " >
+                    <div class="col-8 display-4 clearfix">  <img src="/Images/profile.jpg" class="d-none d-md-block img-fluid mx-auto col-6 float-end mb-3 ms-md-3" id="prof-2" style="max-height: 200px; max-width: 200px;">
+                        Hello, My name is shreyash Gavit</div>
+                    <div class="row p-8">    
+                        <div class="col-4 display-5">E-mail:</div><div class="col-8 display-4"> <a href="mailto:shreyashgavit@outlook.com?subject = Feedback&body = Messsage" id="mailing_adress" target="_blank">
+                        shreyashgavit@outlook.com</a></div>
+                        <!--Gave an mailing adress to be opening in new tab so that Someone can mail directly instead of anything else-->
+                        <div class="col-7 display-5">Personal info:</div>
+                        <div class="col-10">
+                            <div class="row evenly">
+                                <div class="col-6 display-6 d-sm-block">Birthday:</div><div class="col-6 display-7 d-inline"> 9 July 2003</div>
+                                <!-- <b>Age:</b> 19<br> -->
+                                <div class="col-6 display-6 d-sm-block">City:</div><div class="col-6 display-7 d-inline"> Valsad</div>
+                                <div class="col-6 display-6 d-sm-block">studying:</div><div class="col-6 display-7 d-inline"> Bechlors of Computer Engineering</div><br>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- over personal info part -->
-        <!-- about me part -->
-        <Div id="s1" class="row p-3 text_bg" style="background-image: linear-gradient(183deg, #efeff0, #b69ece);"><!--Second Div for some more information about what I'm doing right now and where I'm studying and where I completed high school etc.-->
-            <p id="p3">
-            <div class="col-3 d-inline display-6"> 
-                About me:</div>
-                <div class="col-9 d-inline display-7">
-                    I'm a begineer web-developer.<br>
-                    <!-- <small class="text-body"> I'm pursuing my computer engineering degree</small> -->
-                    I'm persuing my Bechlor's degree From:</Form><a href="https://www.ddu.ac.in/" title="University where I'm studying">@ddu, Nadiad.</a><br><!--An external link here.-->
-                    I completed my Higher secondry education at BAPS Vidhyamandir(pardi-parnera), Abrama, Valsad.
-                </div>
-            </p>
-        </Div>
-        <!-- over about me part -->
-        <!-- Hobbies part -->
-        <Div id="s2" class="row p-2 text_bg" style="background-image: linear-gradient(183deg, #efeff0, #b69ece);"><!--This Div tells anout some stuff I like but it feels cringe to me bc I ain't giving that much information on my portfolio got ya Marky.-->
-            <p id="p4">
-                    <div class="col-3 d-block display-5"> Hobbies:</div>
-                    <div class="col-8 d-block">
-                        <div class="row p-3">
-                            <div class="col-4 display-6">Playing:</div>
-                            <div class="col-8 display-7 d-block"> 
-                                <ul>
-                                    <span class="material-symbols-outlined">
-                                        <li>sports_basketball </li> 
-                                        <li> sports_soccer</li>
-                                        <li> sports_esports </li>
-                                    </span>
-                                        <li> Chess </li>
-                                </ul>
-                            </div>
-                                <div class="col-4 d-block display-6"> Watching</div>
-                                <div class="col-8 d-block display-7">
+            <div id="time"></div>
+            <!-- over personal info part -->
+            <!-- about me part -->
+            <Div id="about" class="row p-3 " ><!--Second Div for some more information about what I'm doing right now and where I'm studying and where I completed high school etc.-->
+                <p id="p3">
+                <div class="col-3 d-inline display-6"> 
+                    About me:</div>
+                    <div class="col-9 d-inline display-7">
+                        I'm a begineer web-developer.<br>
+                        <!-- <small class="text-body"> I'm pursuing my computer engineering degree</small> -->
+                        I'm persuing my Bechlor's degree From:</Form><a href="https://www.ddu.ac.in/" title="University where I'm studying">@ddu, Nadiad.</a><br><!--An external link here.-->
+                        I completed my Higher secondry education at BAPS Vidhyamandir(pardi-parnera), Abrama, Valsad.
+                    </div>
+                </p>
+            </Div>
+            <!-- over about me part -->
+            <!-- Hobbies part -->
+            <Div id="hobbies" class="row p-2 " ><!--This Div tells anout some stuff I like but it feels cringe to me bc I ain't giving that much information on my portfolio got ya Marky.-->
+                <p id="p4">
+                        <div class="col-3 d-block display-5"> Hobbies:</div>
+                        <div class="col-8 d-block">
+                            <div class="row p-3">
+                                <div class="col-4 display-6">Playing:</div>
+                                <div class="col-8 display-7 d-block custombullet"> 
                                     <ul>
-                                        <li> K-dramas</li>
-                                        <li> Esports</li>
+                                        <span class="material-symbols-outlined">
+                                            <li> sports_basketball </li> 
+                                            <li> sports_soccer</li>
+                                            <li> sports_esports </li>
+                                        </span>
+                                            <li> Chess </li>
                                     </ul>
                                 </div>
+                                    <div class="col-4 d-block display-6"> Watching</div>
+                                    <div class="col-8 d-block display-7 custombullet">
+                                        <ul>
+                                            <li> K-dramas</li>
+                                            <li> Esports</li>
+                                        </ul>
+                                    </div>
+                            </div>
                         </div>
-                    </div>
-            </p>
-        </Div>
-        <!-- Over Hobbies part -->
-        <!-- Skills part -->
-        <Div id="skills" class="row p-3 text_bg" style=" background-image: linear-gradient(183deg, #efeff0, #b69ece);">
-            <p>
-                <div class="col-4 display-6">Skills:</div>
-                <div class="col-8">
-                    <div class="row">
-                        <div class="col-9 display-7 d-block">C++</div>
-                        <div class="col-9 d-block"><img class="img-responsive" src="/Images/blender_logo_socket.png" alt="Blender_Logo" style="max-height: 50px;"></div>
-                        <div class="col-9 display-7 d-block">C</div>
-                        <div class="col-9 display-7 d-block">PYTHON</div>
-                        <div class="col-9 display-7 d-block">HTML/CSS</div>
-                        <div class="col-9 display-7 d-block">PHP</div>
-                        <div class="col-9 display-7 d-block">Problem-solving</div>
-                        <div class="col-9 display-7 d-block">Illustrator</div>
-                    </div>
-                </div>    
-            </p>
-        </Div>
-        <div class="row justify-content-center text-center text_bg" style="background-image: linear-gradient(183deg, #efeff0, #b69ece);">
-            <div class="col-10 display-4 d-block">Achivements:</div>
-            <div class="col-3 d-inline">Image-3 c</div>
-            <div class="col-3 d-inline">Image-2 python</div>
-            <div class="col-3 d-block">Image-1 cpp</div>
-            <div class="col-3 d-inline">Image-4 Problem-solving</div>
-        </div>
-        <!-- over Skills part -->
-        <!-- contact part -->
-        <Div class="row display-6 text_bg gradient text-center" style="background-image: linear-gradient(183deg, #efeff0, #b69ece);">
-                <p id="p7" style="margin-block-end: 1%;">
-                    <div class="col-17"><a href="https://www.linkedin.com/in/shreyash-gavit-83885423a/" target="_blank">linkedin</a><!--Another External link here--></div>
-                    <div class="col-17"><a href="https://github.com/Shreyashz" target="_blank">Github</a></div>
-                    <div class="col-17"> <a href="#mailing_adress">Mail-1</a><!--Link Bookmark link here--> </div>
-                    <div class="col-17"><a href="mailto:shreygavit@gmail.com?subject = Feedback&body = Messsage" id="mailing_adress2" target="_blank">Mail-2</a><!--Mailing Link here.--></div>
                 </p>
-        </Div>
-        
+            </Div>
+            <!-- Over Hobbies part -->
+            <!-- Skills part -->
+            <Div id="skills" class="row p-3 " >
+                <p>
+                    <div class="col-4 display-6">Skills:</div>
+                    <div class="col-8">
+                        <div class="row">
+                                <div class="col-3 display-7 d-block">C++</div><div class="col-10"><div class="progress">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 70%"></div>
+                                  </div>
+                                <div class="col-9 d-block"><img class="img-responsive" src="/Images/blender_logo_socket.png" alt="Blender_Logo" style="max-height: 50px;"></div><div class="progress">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 90%"></div>
+                                  </div>
+                                <div class="col-9 display-7 d-block">C</div><div class="progress">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 70%"></div>
+                                  </div>
+                                <div class="col-9 display-7 d-block">PYTHON</div><div class="progress">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 80%"></div>
+                                  </div>
+                                <div class="col-9 display-7 d-block">HTML/CSS</div><div class="progress">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+                                  </div>
+                                <div class="col-9 display-7 d-block">PHP</div><div class="progress">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 55%"></div>
+                                  </div>
+                                <div class="col-9 display-7 d-block">Problem-solving</div><div class="progress">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 40%"></div>
+                                  </div>
+                                <div class="col-9 display-7 d-block">Illustrator</div><div class="progress">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 80%"></div>
+                                  </div>
+                        </div>
+                    </div>    
+                </p>
+            </Div>
+            <div id="achiv" class="row justify-content-center text-center " >
+                <div class="col-10 display-4 d-block">Achivements:</div>
+                <div class="col-3 d-inline">Image-3 c</div>
+                <div class="col-3 d-inline">Image-2 python</div>
+                <div class="col-3 d-block">Image-1 cpp</div>
+                <div class="col-3 d-inline">Image-4 Problem-solving</div>
+            </div>
+            <!-- over Skills part -->
+            <!-- Contact part -->
+            <Div id="contakt" class="row display-6 text-center" >
+                    <p id="p7" style="margin-block-end: 1%;">
+                        <div class="col-17"><a href="https://www.linkedin.com/in/shreyash-gavit-83885423a/" target="_blank">linkedin</a><!--Another External link here--></div>
+                        <div class="col-17"><a href="https://github.com/Shreyashz" target="_blank">Github</a></div>
+                        <div class="col-17"> <a href="#mailing_adress">Mail-1</a><!--Link Bookmark link here--> </div>
+                        <div class="col-17"><a href="mailto:shreygavit@gmail.com?subject = Feedback&body = Messsage" id="mailing_adress2" target="_blank">Mail-2</a><!--Mailing Link here.--></div>
+                    </p>
+            </Div>
+        </div>
         <!-- over contact part -->
         <!-- Thanks for Visiting part -->
         <footer>
             <Div class="row text-center">
-                <p id="last_line"><div class="col-12 text_bg " style="background-image: linear-gradient(183deg, #efeff0, #b69ece);">
+                <p id="last_line"><div class="col-12  text_bg" >
                     <label style="font-size: x-large;"> 
                         ＼(ﾟｰﾟ＼)( ﾉ ﾟｰﾟ)ﾉ</label>
                         <label style="font-weight:20px ;">Thanks for Visiting!</label>

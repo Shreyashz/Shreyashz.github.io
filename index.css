@@ -1,7 +1,9 @@
 /*body part is used for image in that body*/
 body{
     background-attachment:scroll;/*Makes it so that it can't be scrolled */
-    background-size: cover; /*Makes it so that it covers the whole width of page's visible portion*/
+     /*Makes it so that it covers the whole width of page's visible portion*/
+    background-size: 100%;
+    background-repeat: no-repeat;
   }
   /* This part is being used for better margin gap and font size of all elements of the page.*/
 * {
@@ -12,6 +14,20 @@ body{
   img{
     max-width: 100%;
     height: auto;
+  }
+  .custombullet >ul{
+    list-style: none;
+  }
+ .custombullet >ul li::before {
+        /*content: url("path/to/icon");*/
+        content: '◉';
+        border-radius: 100%;
+        width: 1em;
+        height: 1em;
+        display: inline-block;
+        padding: 0.25em;
+        line-height: 1.0;
+        margin-right: 0.5em;
   }
   /*This part is here to add margin spaces at each section change for page to look bigger than what it actually is in the normal size.*/
 #first_back{
@@ -45,6 +61,13 @@ a:hover, a:active {
   padding: 0.5%;
   border-radius: 100%;
   /* border-image: linear-gradient(45deg, red 0%,black 100%); */
+  margin-top: 15%;
+  /* transition: transform 0.6s cubic-bezier(0.076, 0, 0.24, 1); */
+}
+#prof-2{
+  padding: 0.5%;
+  border-radius: 100%;
+  /* border-image: linear-gradient(45deg, red 0%,black 100%); */
   margin-top: 2%;
   /* transition: transform 0.6s cubic-bezier(0.076, 0, 0.24, 1); */
 }
@@ -55,15 +78,6 @@ a:hover, a:active {
 } */
 #s2>ul{
   list-style-type: none;
-}
-.gradient{
-  max-width: 100%;
-  max-height: 00%;
-  padding: 1rem;
-  color: white;
-  border-width: 3px;
-  border-style: solid;
-  border-image: linear-gradient(0deg,red,rgba(0, 0, 0, 0)) 1 50%;
 }
 
 #p7>a:visited{
