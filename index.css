@@ -9,6 +9,10 @@ body{
     margin: 0px; 
     font-size: 30px;
   }
+  img{
+    max-width: 100%;
+    height: auto;
+  }
   /*This part is here to add margin spaces at each section change for page to look bigger than what it actually is in the normal size.*/
 #first_back{
     background-attachment: fixed;
