@@ -15,6 +15,9 @@ body{
     max-width: 100%;
     height: auto;
   }
+  header>a{
+    font-size: small;
+  }
   .custombullet >ul{
     list-style: none;
   }
