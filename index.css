@@ -49,7 +49,9 @@ body{
   -webkit-font-smoothing: antialiased;
 }
 .titles{
-  padding-top: 70px;
+  padding-block-start: 5%;
+  padding-top: 8%;
+  padding-block-end: 0px;
 }
   .tab {
     display: block;
