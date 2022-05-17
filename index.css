@@ -4,11 +4,12 @@ body{
      /*Makes it so that it covers the whole width of page's visible portion*/
     background-size: 100%;
     background-repeat: no-repeat;
+    margin: 0px;
+    padding: 0px;
+    overflow-x:hidden;
   }
   /* This part is being used for better margin gap and font size of all elements of the page.*/
 * {
-    padding: 0px;
-    margin: 0px; 
     font-size: 30px;
   }
   img{
@@ -18,6 +19,42 @@ body{
   header>a{
     font-size: small;
   }
+  .text_bg{
+    background-image: linear-gradient(30deg,#fbfbfb, #9fa5f6);
+    background-size: 100%;
+    background-attachment: scroll;
+    background-clip: text;
+    -webkit-background-clip: text;  
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    -webkit-font-smoothing: antialiased;
+}
+.link_bg{
+  background-size: 100%;
+  background-attachment: scroll;
+  background-clip: text;
+  -webkit-background-clip: text;  
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+.text_bg2{
+  background-image: linear-gradient(210deg,#678bc0,#1163c3, #74073d,  #ad4d6a);
+  background-size: 100%;
+  background-attachment: scroll;
+  background-clip: text;
+  -webkit-background-clip: text;  
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+.titles{
+  padding-top: 70px;
+}
+  .tab {
+    display: block;
+    margin-left: 100px;
+    }
   .custombullet >ul{
     list-style: none;
   }
@@ -45,6 +82,7 @@ body{
 }
   /*Changing css colors for links:Link and Visited*/ 
 a:visited {
+    text-decoration-line: overline;
     background-color: rgba(216, 26, 26, 0.525);
     color: white;
     text-decoration: none;
@@ -52,8 +90,15 @@ a:visited {
 }
 /*Changing css colors for Links:hover and active*/
 a:hover, a:active {
-    background-color: rgba(216, 26, 26, 0.525);
+  font-weight: bolder;
+  filter: brightness(110%) saturate(110%);
+  -webkit-filter: brightness(110%) saturate(110%);
 }
+/* .navblur{
+  z-index: 0;
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+} */
 #ima{
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -64,14 +109,6 @@ a:hover, a:active {
   padding: 0.5%;
   border-radius: 100%;
   /* border-image: linear-gradient(45deg, red 0%,black 100%); */
-  margin-top: 15%;
-  /* transition: transform 0.6s cubic-bezier(0.076, 0, 0.24, 1); */
-}
-#prof-2{
-  padding: 0.5%;
-  border-radius: 100%;
-  /* border-image: linear-gradient(45deg, red 0%,black 100%); */
-  margin-top: 2%;
   /* transition: transform 0.6s cubic-bezier(0.076, 0, 0.24, 1); */
 }
 /* .container>img:hover {
@@ -83,20 +120,13 @@ a:hover, a:active {
   list-style-type: none;
 }
 
-#p7>a:visited{
+#linking>a:visited{
   color: rgba(35, 35, 35, 0.6);
 }
-#p7>a:active, #p7>a:hover{
+#linking>a:active, #linking>a:hover{
   color:black;
 }
 #last_line{
   text-align: center; 
   background-image: linear-gradient(45deg, #173654, black);
-}
-.dark{
-
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  background-size: 40%;
 }
