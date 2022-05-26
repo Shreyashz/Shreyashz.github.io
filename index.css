@@ -19,8 +19,8 @@ body{
   header>a{
     font-size: small;
   }
-  .text_bg{
-    background-image: linear-gradient(30deg,#fbfbfb, #9fa5f6);
+  .text_bgI{
+    background-color: #09181d;
     background-size: 100%;
     background-attachment: scroll;
     background-clip: text;
@@ -28,6 +28,21 @@ body{
     -webkit-text-fill-color: transparent;
     font-weight: bold;
     -webkit-font-smoothing: antialiased;
+}
+  .text_bg{
+    background-image: linear-gradient(60deg,#efe8e1, #c1d1dc, #b7e6ff);
+    background-size: 100%;
+    background-attachment: scroll;
+    background-clip: text;
+    -webkit-background-clip: text;  
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    -webkit-font-smoothing: antialiased;
+}
+.text_bgNo{  
+  -webkit-text-fill-color: #c1d1dc;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
 }
 .link_bg{
   background-size: 100%;
@@ -39,7 +54,27 @@ body{
   -webkit-font-smoothing: antialiased;
 }
 .text_bg2{
-  background-image: linear-gradient(210deg,#678bc0,#1163c3, #74073d,  #ad4d6a);
+  background-color: #06042c;
+  background-size: 100%;
+  background-attachment: scroll;
+  background-clip: text;
+  -webkit-background-clip: text;  
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+.text_bg3{
+  background-image: linear-gradient(210deg,#678bc0,#1163c3, #ffeeee);
+  background-size: 100%;
+  background-attachment: scroll;
+  background-clip: text;
+  -webkit-background-clip: text;  
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+.text_bg4{
+  background-image: linear-gradient(210deg,#0b3d47, #0f171a);
   background-size: 100%;
   background-attachment: scroll;
   background-clip: text;
@@ -70,6 +105,16 @@ body{
         padding: 0.25em;
         line-height: 1.0;
         margin-right: 0.5em;
+  }
+  .main-header::after {
+    display: block;
+    position: relative;
+    background-image: linear-gradient(180deg, transparent 0%, #070431 100%);
+    margin-top: -150px;
+    margin-bottom: 50px;
+    height: 200px;
+    width: 100%;
+    content: '';
   }
   /*This part is here to add margin spaces at each section change for page to look bigger than what it actually is in the normal size.*/
 #first_back{
@@ -131,4 +176,44 @@ a:hover, a:active {
 #last_line{
   text-align: center; 
   background-image: linear-gradient(45deg, #173654, black);
+}
+#prof-lik{
+  display: inline-block;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  background: #000000;
+  color: white;
+  line-height: 75px;
+  font-size: medium
+}
+.fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+@media (min-width: 768px) {
+  .navbar-expand-md {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
+}
+.navbar {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+}
+#mainNav {
+  -webkit-backdrop-filter: blur(20px) saturate(200%);
+  backdrop-filter: blur(20px) saturate(200%);
+  -webkit-box-shadow: 0 0 20px rgb(0 0 0 / 4%);
+  box-shadow: 0 0 20px rgb(0 0 0 / 4%);
+  background: #000000;
+  opacity: 8px;
 }
