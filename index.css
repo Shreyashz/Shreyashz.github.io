@@ -209,11 +209,3 @@ a:hover, a:active {
   padding-top: .5rem;
   padding-bottom: .5rem;
 }
-#mainNav {
-  -webkit-backdrop-filter: blur(20px) saturate(200%);
-  backdrop-filter: blur(20px) saturate(200%);
-  -webkit-box-shadow: 0 0 20px rgb(0 0 0 / 4%);
-  box-shadow: 0 0 20px rgb(0 0 0 / 4%);
-  background: #000000;
-  opacity: 8px;
-}
