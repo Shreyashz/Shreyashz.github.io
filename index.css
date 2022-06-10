@@ -1,3 +1,14 @@
+:root{
+  /* --section-bg-color: ;
+  --scroll-bar-color: ;
+  --scroll-bar-thumb-color: ;
+  --scroll-thumb-hover-color: ; */
+  --scale: 0.1;
+  --space: 8vmin;
+  --font-primary: 'Syncopate', sans-serif;
+  --font-heading: 'Playfair Display', serif;
+}
+
 /*body part is used for image in that body*/
 body{
     background-attachment:scroll;/*Makes it so that it can't be scrolled */
@@ -18,6 +29,315 @@ body{
   }
   header>a{
     font-size: small;
+  }
+  .skills-im{
+    /* size: 5%; */
+    max-height: 50px;
+  }
+  .nav-btn {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  .open-btn {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+  }
+  
+  .nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .nav.visible {
+    transform: translateX(0);
+  }
+  
+  .nav-white {
+    background-color: whitesmoke;
+    width: 60%;
+    max-width: 480px;
+    min-width: 320px;
+    transition-delay: 0.4s;
+  }
+  
+  .nav-white.visible {
+    transition-delay: 0s;
+  }
+  
+  .nav-red {
+    background-color: #4698be;
+    width: 95%;
+    transition-delay: 0.2s;
+  }
+  
+  .nav-red.visible {
+    transition-delay: 0.2s;
+  }
+  
+  .nav-black {
+    background-color: #030303;
+    width: 95%;
+    padding: 40px;
+    position: relative;
+    transition-delay: 0s;
+  }
+  
+  .nav-black.visible {
+    transition-delay: 0.4s;
+  }
+  
+  .close-btn {
+    opacity: 0.3;
+    position: absolute;
+    top: 40px;
+    right: 30px;
+  }
+  
+  .list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .list li {
+    margin: 20px 0;
+  }
+  
+  .list li a {
+    color: #bdd9ea;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  .contak li a {
+    color: #bdd9ea;
+    font-size: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+
+  }
+  
+  .list ul {
+    list-style-type: none;
+    padding-left: 20px;
+  }
+  .nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 7px 15px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .navd.active {
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .navd.active a {
+    color: #000;
+  }
+  
+  .navd.active .contain {
+    padding: 10px 0;
+  }
+  
+  .maeein {
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin: 0;
+    background-color: #eee;
+    background-image: url('/Images/intro-bg-dark-blurred.jpg');
+    background-size: cover;
+  }
+  
+  .maiin {
+    min-height: 100vh;
+    display: grid;
+    z-index: 2;
+    filter: none;
+    -webkit-filter: none;
+    grid-template-columns: 100vw 100vw 100vw;
+    width: 300vw;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  figure {
+    max-width: 50vw;
+    margin: 0 auto;
+    background: rgba(255,255,255,0.8);
+    padding: 30px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 2em -0.5em #aaa;
+    position: relative;
+  }
+  
+  figure img {
+    max-width: 100%;
+    max-height: 70vh;
+  }
+  
+  figure figcaption {
+    font-family: "Playfair Display";
+    font-weight: 900;
+    font-size: 3em;
+    font-style: italic;
+    text-align: right;
+    text-shadow: 0 0 1em #555;
+    text-shadow: 0 0 0.5em white;
+    position: absolute;
+    right: -2rem;
+    bottom: -2rem;
+  }
+  
+  .helper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 1rem;
+    text-align: center;
+    font-family: 'Nunito Sans';
+    opacity: .45;
+    font-size: 1.2em;
+    transition: opacity, .15s;
+  }
+  .helper:hover {
+    opacity: 1;
+  }
+  @media (prefers-reduced-motion) {
+    :root {
+      --scale: 0;
+    }
+  }
+
+  a {
+    color: hsl(65, 80%, 60%);
+    text-decoration: none;
+  }
+  
+  a:hover,
+  a:focus {
+    text-decoration: underline;
+  }
+  
+  .page-title {
+    text-align: center;
+  }
+  
+  .page-title::after {
+    content: '↓';
+    display: block;
+    font-size: 2em;
+    opacity: 0;
+    transform: translateY(-24px);
+    animation: fadein 800ms 500ms cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+  }
+  
+  .header,
+  .footer {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+  }
+  
+  .section {
+    transform-origin: center top;
+    transform: scaleY(calc(1 - var(--scale)));
+  }
+  
+  .section > * {
+    transform-origin: center top;
+    transform: scaleY(calc(1 / (1 - var(--scale))));
+  }
+  
+  .section-title {
+    font-family: var(--font-heading);
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    font-weight: bold;
+    line-height: 1.125;
+  }
+  
+  .byline {
+    display: block;
+    font-size: 0.6em;
+    margin: calc(var(--space) / 1.35) 0;
+  }
+  
+  .content {
+    position: relative;
+    margin: -50vh auto 0;
+    padding: var(--space);
+    max-width: 55ch;
+    width: calc(100% - var(--space));
+    background: hsla(5, 15%, 5%, 0.9);
+  }
+  
+  .content > * + * {
+    margin-top: 2rem;
+  }
+  
+  .image-container {
+    position: sticky;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -2;
+  }
+  
+  .image-container img {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .image-container::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(
+      to bottom,
+      hsla(5, 15%, 5%, 0) 0%,
+      hsla(5, 15%, 5%, 0.013) 8.1%,
+      hsla(5, 15%, 5%, 0.049) 15.5%,
+      hsla(5, 15%, 5%, 0.104) 22.5%,
+      hsla(5, 15%, 5%, 0.175) 29%,
+      hsla(5, 15%, 5%, 0.259) 35.3%,
+      hsla(5, 15%, 5%, 0.352) 41.2%,
+      hsla(5, 15%, 5%, 0.45) 47.1%,
+      hsla(5, 15%, 5%, 0.55) 52.9%,
+      hsla(5, 15%, 5%, 0.648) 58.8%,
+      hsla(5, 15%, 5%, 0.741) 64.7%,
+      hsla(5, 15%, 5%, 0.825) 71%,
+      hsla(5, 15%, 5%, 0.896) 77.5%,
+      hsla(5, 15%, 5%, 0.951) 84.5%,
+      hsla(5, 15%, 5%, 0.987) 91.9%,
+      hsl(5, 15%, 5%) 100%
+    );
+  }
+  
+  @keyframes fadein {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .nav_ic{
+    block-size: 55px;
   }
   .text_bgI{
     background-color: #09181d;
@@ -84,9 +404,7 @@ body{
   -webkit-font-smoothing: antialiased;
 }
 .titles{
-  padding-block-start: 5%;
-  padding-top: 8%;
-  padding-block-end: 0px;
+  padding-top: 70px;
 }
   .tab {
     display: block;
