@@ -18,9 +18,10 @@ body{
     margin: 0px;
     padding: 0px;
     overflow-x:hidden;
+    overflow-inline: hidden;
   }
   /* This part is being used for better margin gap and font size of all elements of the page.*/
-* {
+* {  
     font-size: 30px;
   }
   img{
@@ -162,7 +163,9 @@ body{
     min-height: 100vh;
     display: grid;
     z-index: 2;
+    overflow-wrap: normal;
     filter: none;
+    margin-top: 10px;
     -webkit-filter: none;
     grid-template-columns: 100vw 100vw 100vw;
     width: 300vw;
