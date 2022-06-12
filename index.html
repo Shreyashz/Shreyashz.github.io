@@ -22,16 +22,14 @@
         <!-- styling part -->
         <style>
             body{
-                top: 12px;
+                top: 10px;
                 background: linear-gradient(#020112,#030303, #030205) no-repeat scroll;
+                -webkit-overflow-scrolling: none;
                 
             }
             a:link{
                 text-decoration: none;
             }
-            /* .dark{
-                background-image: url(/Images/BoxSphere2.png);
-            } */
         </style>
         <!-- over styling part -->
         <script type="text/javascript"> 
@@ -52,7 +50,7 @@
     <body class="user-select-none text-wrap" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="77" style="font-family: 'Sen', sans-serif;" onload=display_ct();>
         <header>
 
-            <nav class="navd fixed-top d-lg-none text_bgNo" style="background-color: #030303; font-family: 'Syncopate', sans-serif; z-index: 1030;">
+            <nav class="navd fixed-top d-xl-none text_bgNo" style="background-color: #030303; font-family: 'Syncopate', sans-serif; z-index: 1030;">
                 <div class="contain">
                     <button class="nav-btn fixed open-btn current" style="background: fixed #020112; background-size: cover; overflow: hidden;">
                         <label> MENU</label>
@@ -66,7 +64,7 @@
                 
                             <!-- <img src="Images/favicon.ico" alt="Logo" class="logo"> -->
                 
-                            <ul class="list fw-bold" style=" padding-left: 23px ; padding-top:25px;">
+                            <ul class="list fw-bold" style=" padding-left: 13px ; padding-top:25px;">
                                 <li><a href="#">HOME</a></li>
                                 <li><a href="#about">ABOUT</a></li>
                                 <li><a href="#hobbies">HOBBIES</a></li>
@@ -89,7 +87,7 @@
                     <script src="script.js"></script>
                 </div>
             </nav>
-            <div class="navbar d-none d-lg-block navbar-expand-lg fixed-top nav-bar text_bgNo" style="background-color: #030303; font-family: 'Syncopate', sans-serif; ">
+            <div class="navbar d-none d-xl-block navbar-expand-lg fixed-top nav-bar text_bgNo" style="background-color: #030303; font-family: 'Syncopate', sans-serif; ">
                 <a href="" class="logo"></a>
                 <div class="navigation d-inline">
                     <div class="nav-items">
@@ -124,13 +122,6 @@
             </div>
         </div>
             <!-- Over starting point -->
-            <script>
-                var content = [
-                { title: `Let's Get to Know One Another`, image: 'Images/Nebula.png'},
-                { title: `Some Stuff I Need to Get Off My Chest`, image: 'Images/Nebula.png'},
-                { title: `Call Me, Maybe`, image: 'Images/Nebula.png'}
-            ];
-            </script>
         <main class="text_bg3 p-4 p-lg-3 main">
             <!-- about me part -->
             <div id="about" class="row clearfix" style="margin-top: 3%; "><!--Second Div for some more information about what I'm doing right now and where I'm studying and where I completed high school etc.-->
@@ -145,34 +136,21 @@
                             If I had to discribe me in one word I would say a computer-nerd.<br>
                             And I like coding and learning new things which are related to Coding & Gaming, of course.
                             I also like music, mostly I listen to Indian Classical Music from my relligion and while coding It's EDM.
-                            I'm persuing my Bachlor's degree From:</Form><a href="https://www.ddu.ac.in/" title="University where I'm studying" target="_blank">@ddu, Nadiad.</a><!--An external link here.--><br>
-                            I completed my School education from BAPS Vidhyamandir(pardi-parnera), Abrama, Valsad.
                         </p>
-                    <!-- <div class="col-8 float-right d-block d-lg-none" style="font-size:large ;">
-                        I'm a begineer web-developer & a student from India.
-                        If I had to discribe me in one word I would say a computer-neard.<br>
-                        And I like coding and learning new things which are related to Coding & Gaming, of course.
-                        I also like music, mostly I listen to Indian Classical Music from my relligion and while coding It's EDM.
-                        <small class="text-body"> I'm pursuing my computer engineering degree</small><br>
-                        I'm persuing my Bachlor's degree From:</Form><a href="https://www.ddu.ac.in/" title="University where I'm studying" target="_blank" style="font-size:large ;">@ddu, Nadiad.</a><br>
-                        I completed my School education from BAPS Vidhyamandir(pardi-parnera), Abrama, Valsad.
-                </div> -->
                         <span id="prof-like"  style="float: right;width: 50%;line-height: 75px; z-index: 10;">
                 </Div>
                 <!-- over about me part -->
                 <!-- prsonal info part -->
-                <div class="col-7 text_bg display-6 titles" style="margin-top: 1%;">Personal info:</div>
+                <div class="col-7 text_bg display-6 titles text_bgNo" style="margin-top: 1%;">Personal info:</div>
                 <div class="col-10">
                         <div class="row evenly">
                         <div class="col-6 d-sm-block">Birthday:</div><div class="col-6 d-inline"> 9 July 2003</div>
-                        <!-- <b>Age:</b> 19<br> -->
                         <div class="col-6 d-sm-block">City:</div><div class="col-6 d-inline"> Valsad</div>
                         <div class="col-6 d-sm-block">studying:</div><div class="col-6 d-inline"> Bachlors of Computer Engineering</div>
-                        <div class="col-6 d-sm-block">E-mail:</div>
-                        <div class="col-6 d-inline"> <a class="d-none d-md-block" href="#mailing_adress" id="mailing_adress" target="_blank">
-                            shreyashgavit@outlook.com</a>
-                            <a class="d-block d-md-none" href="#mailing_adress" id="shreyashgavit@outlook.com" target="_blank">Mail</a>
-                        </div>
+                        <div class="col-12">
+                            I'm persuing my degree From:</Form><a href="https://www.ddu.ac.in/" class="text_bgNo" title="University where I'm studying" target="_blank">ddu, Nadiad.</a><!--An external link here.--><br>
+                            I completed my School education From: BAPS Vidhyamandir(pardi-parnera), Abrama, Valsad.
+                            </div>
                     </div>
                 </div>
             </div>
@@ -183,18 +161,18 @@
                 <p id="p4" class="titles">
                         <div class="col-2 col-md-3 d-block text_bgNo display-6"> Hobbies:</div>
                         <div class="col-5 col-md-8 d-block">
-                            <div class="row p-3  d-lg-block d-none">
+                            <div class="row p-3  d-xl-block d-none">
                                 <div class="col-md-4 col-2">Playing:</div>
                                 <Div class="row">
                                     <p id="linking" style="margin-block-start: 1%;">
-                                        <div class="col-2 d-inline tiltes"><img src="/Images/chess_tra.png" alt="CHess"><!--Another External link here--></div>
-                                        <div class="col-2 d-inline"><img src="/Images/basketball_tra.png" alt="Basketball"></div>
-                                        <div class="col-2 d-inline"><img src="/Images/futbal_tra.png" alt="Football"><!--Link Bookmark link here--> </div>
+                                        <div class="col-2 d-inline"><img title="Chess" src="/Images/chess_tra.png" alt="CHess"><!--Another External link here--></div>
+                                        <div class="col-2 d-inline"><img title="Basketball" src="/Images/basketball_tra.png" alt="Basketball"></div>
+                                        <div class="col-2 d-inline"><img title="Football" src="/Images/futbal_tra.png" alt="Football"><!--Link Bookmark link here--> </div>
                                     </p>
                             </Div>
                             </div>
                         </div>
-                        <div class="row p-1 d-lg-none d-block">
+                        <div class="row p-1 d-xl-none d-block">
                             <div class="col-md-4 d-block">Playing:</div>
                             <Div class="row">
                                 <p id="linking" style="margin-block-start: 1%;">
@@ -240,22 +218,19 @@
             </Div>
             <div id="Achiv" class="row justify-content-center text-center " style="margin-top: 3%;">
                 <div class="col-10 d-block text_bg display-6 titles" >Showcase:</div>
-                <!-- <div class="col-3 d-inline">Image-3 c</div>
-                <div class="col-3 d-inline">Image-2 python</div>
-                <div class="col-3 d-block">Image-1 cpp</div>
-                <div class="col-3 d-inline">Image-4 Problem-solving</div>
-                <aside class="helper">Scroll sideways</aside> -->
-                <div class="col-25 d-block">
-                    <div class="maeein">
-                        <div class="maiin">
-                        <figure class="rellax">
+            </div>
+            <div class="row">
+                <div class="col-20 d-block">
+                    <div class="maeein  text_bgNo">
+                        <div class="row maiin">
+                        <figure class="col-20 rellax">
                             <img src="Images/5 donut.png" alt="Donut">
                             <figcaption class="rellax" data-rellax-speed="1">Donut</figcaption>
                         </figure>
-                        <!-- <figure class="rellax">
+                        <figure class="col-20 rellax">
                             <img src="Images/Nebula.png" alt="Nebula">
-                            <figcaption class="rellax" data-rellax-speed="1">Bronte Beach, Australia</figcaption>
-                        </figure> -->
+                            <figcaption class="rellax" data-rellax-speed="1">Nebula</figcaption>
+                        </figure>
                         </div>
                         <!-- <script src="https://cdn.rawgit.com/dixonandmoe/rellax/master/rellax.min.js"></script>
                         <script>
@@ -279,21 +254,18 @@
         <!-- over contact part -->
         <!-- Thanks for Visiting part -->
         <footer>
-            <Div class="row text-center">
                 <p id="last_line">
-                    <div class="col-12 text_bg display-7">
+                    <div class="col-block text_bg display-7 text-center">
                     <label> 
                         ＼(ﾟｰﾟ＼)( ﾉ ﾟｰﾟ)ﾉ</label>
                         <label style="font-weight:bold ;">Thanks for Visiting!</label>
                         <label > ＼(ﾟｰﾟ＼)( ﾉ ﾟｰﾟ)ﾉ</label>
                     </div>
-                    <div class="col-block">
-                        <p class="text-muted mb-0 small" style="font-size:20px;">Copyright  © Shreyash 2022</p>
+                    <div class="col-block text-center">
+                        <p class="text-muted mb-0 small" style="font-size:10px;">Copyright  © Shreyash 2022</p>
                     </div>
                 </p>
-            </Div>
         </footer>
-        <!-- <div class="text-center text-muted display-8"><a href="https://github.com/Shreyashz/Shreyashz.github.io" target="_blank"> Code of this site </a></div> -->
         <!-- over Thanks for Visiting part -->
     </body>
 </html>

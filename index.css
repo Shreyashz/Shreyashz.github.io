@@ -5,19 +5,17 @@
   --scroll-thumb-hover-color: ; */
   --scale: 0.1;
   --space: 8vmin;
-  --font-primary: 'Syncopate', sans-serif;
-  --font-heading: 'Playfair Display', serif;
 }
 
 /*body part is used for image in that body*/
 body{
     background-attachment:scroll;/*Makes it so that it can't be scrolled */
-     /*Makes it so that it covers the whole width of page's visible portion*/
     background-size: 100%;
     background-repeat: no-repeat;
     margin: 0px;
     padding: 0px;
     overflow-x:hidden;
+
     overflow-inline: hidden;
   }
   /* This part is being used for better margin gap and font size of all elements of the page.*/
@@ -32,7 +30,6 @@ body{
     font-size: small;
   }
   .skills-im{
-    /* size: 5%; */
     max-height: 50px;
   }
   .nav-btn {
@@ -150,25 +147,28 @@ body{
     padding: 10px 0;
   }
   
+  /* for the showcase part */
   .maeein {
     box-sizing: border-box;
     border-radius: 5px;
     margin: 0;
+    padding: 40px;
     background-color: #eee;
     background-image: url('/Images/intro-bg-dark-blurred.jpg');
     background-size: cover;
   }
   
   .maiin {
-    min-height: 100vh;
+    min-height: 80vh;
     display: grid;
-    z-index: 2;
+    z-index: 100;
     overflow-wrap: normal;
     filter: none;
+    font-size: 12px;
     margin-top: 10px;
     -webkit-filter: none;
-    grid-template-columns: 100vw 100vw 100vw;
-    width: 300vw;
+    grid-template-columns: 20vw 20vw 20vw;
+    width: 70vw;
     justify-content: center;
     align-items: center;
   }
@@ -177,7 +177,7 @@ body{
     max-width: 50vw;
     margin: 0 auto;
     background: rgba(255,255,255,0.8);
-    padding: 30px;
+    padding-block: 30px;
     border: 1px solid #ddd;
     box-shadow: 0 0 2em -0.5em #aaa;
     position: relative;
@@ -189,16 +189,18 @@ body{
   }
   
   figure figcaption {
-    font-family: "Playfair Display";
+    -webkit-text-fill-color: #080043f6;
+    font-family: 'Syncopate', sans-serif;
+    text-transform:uppercase;
     font-weight: 900;
-    font-size: 3em;
+    font-size: 40px;
     font-style: italic;
     text-align: right;
     text-shadow: 0 0 1em #555;
     text-shadow: 0 0 0.5em white;
     position: absolute;
     right: -2rem;
-    bottom: -2rem;
+    bottom: -1rem;
   }
   
   .helper {
@@ -220,9 +222,9 @@ body{
       --scale: 0;
     }
   }
-
+/* done    */
   a {
-    color: hsl(65, 80%, 60%);
+    color: hsl(65, 90%, 36%);
     text-decoration: none;
   }
   
@@ -363,8 +365,14 @@ body{
     -webkit-font-smoothing: antialiased;
 }
 .text_bgNo{  
-  -webkit-text-fill-color: #c1d1dc;
+  -webkit-text-fill-color: #bdd9ea;
   font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+a.text_bgNo {  
+  -webkit-text-fill-color: #c6c5fffe;
+  text-transform: uppercase;
+  font-weight: bolder;
   -webkit-font-smoothing: antialiased;
 }
 .link_bg{
@@ -437,7 +445,6 @@ body{
     width: 100%;
     content: '';
   }
-  /*This part is here to add margin spaces at each section change for page to look bigger than what it actually is in the normal size.*/
 #first_back{
     background-attachment: fixed;
   }
@@ -445,8 +452,6 @@ body{
     /* Center horizontally*/
     position: relative;
     top: 50%;
-    /* font-size: 100px; */
-    /* margin: -25px 0 0 -25px; */
 }
   /*Changing css colors for links:Link and Visited*/ 
 a:visited {
@@ -462,11 +467,6 @@ a:hover, a:active {
   filter: brightness(110%) saturate(110%);
   -webkit-filter: brightness(110%) saturate(110%);
 }
-/* .navblur{
-  z-index: 0;
-  filter: blur(8px);
-  -webkit-filter: blur(8px);
-} */
 #ima{
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -476,14 +476,8 @@ a:hover, a:active {
 #prof{
   padding: 0.5%;
   border-radius: 100%;
-  /* border-image: linear-gradient(45deg, red 0%,black 100%); */
-  /* transition: transform 0.6s cubic-bezier(0.076, 0, 0.24, 1); */
 }
-/* .container>img:hover {
-  transform: scale(1.1) rotate(1deg);
-  transform-origin: center center;
-  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.25), 0 0 48px rgba(0, 0, 0, 0.35);
-} */
+
 #s2>ul{
   list-style-type: none;
 }
@@ -495,7 +489,6 @@ a:hover, a:active {
   color:black;
 }
 #last_line{
-  text-align: center; 
   background-image: linear-gradient(45deg, #173654, black);
 }
 #prof-lik{
